@@ -37,7 +37,7 @@ namespace MvcMovie
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<MvcMovieContext>(options => options.UseSqlite("Data Source=MvcMovie.db"));
-            services.AddDbContext<MvcMovieContext>(options => options.UseNpgsql("Data Source=MvcMovie.psql"));
+            //services.AddDbContext<MvcMovieContext>(options => options.UseNpgsql("Data Source=MvcMovie.psql"));
 
         }
 
